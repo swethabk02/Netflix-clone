@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         genreNextBtn.addEventListener('click', () => {
             const slide = genreSlides[index];
-            const itemWidth = slide.querySelector('.genre-item').offsetWidth + 10; // Adjust for margin-right
+            const itemWidth = slide.querySelector('.genre-item').offsetWidth + 10; 
             if (genreCounter < slide.children.length - Math.floor(slide.offsetWidth / itemWidth)) {
                 genreCounter++;
                 updateGenreSlide(slide, itemWidth);
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         genrePrevBtn.addEventListener('click', () => {
             const slide = genreSlides[index];
-            const itemWidth = slide.querySelector('.genre-item').offsetWidth + 10; // Adjust for margin-right
+            const itemWidth = slide.querySelector('.genre-item').offsetWidth + 10;
             if (genreCounter > 0) {
                 genreCounter--;
                 updateGenreSlide(slide, itemWidth);
