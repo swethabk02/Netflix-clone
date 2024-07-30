@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home Page</title>
+    <style>
+        /* styles.css */
+
+body, html {
+    background-image: url('cover.jpg');
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: right;
+    margin-right: 20px; /* Adjust the gap as needed */
+}
+
+.nav button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.language-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.signin-btn {
+    background-color: transparent;
+}
+
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/59e36327-f91a-49e8-aabd-1a9f6b6a249b/4d547d0d-6b22-482b-8a24-d4e5c5441d02/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.get-started-btn:hover {
+    background-color: #f40612;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        <div class="nav">
+            <button class="language-btn">English</button>
+            <button class="signin-btn">Sign In</button>
+        </div>
+    </div>
+
+    <div class="home-section">
+        <div class="main-content">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <div class="cta">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <button class="get-started-btn" onclick="window.location.href='signin.html'">Get Started</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

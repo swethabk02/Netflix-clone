@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Watching?</title>
+    <style>
+        /* styles.css */
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.manage-profiles-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.manage-profiles-btn:hover {
+    background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <div class="profile-section">
+        <h1>Who's watching?</h1>
+        <div class="profiles">
+            <div class="profile" onclick="window.location.href='main.html'">
+                <img src="c:\Users\DELL\Desktop\aicte\clone\swetha.jpg" alt="Swetha BK">
+                <p>Swetha BK</p>
+            </div>
+            <div class="profile" onclick="window.location.href='main.html'">
+                <img src="c:\Users\DELL\Desktop\aicte\clone\kavi.jpg" alt="Kavitha">
+                <p>Kavitha</p>
+            </div>
+            <div class="profile" onclick="window.location.href='main.html'">
+                <img src="c:\Users\DELL\Desktop\aicte\clone\swathi.jpg" alt="Swathi">
+                <p>Swathi</p>
+            </div>
+            <div class="profile" onclick="window.location.href='main.html'">
+                <img src="c:\Users\DELL\Desktop\aicte\clone\children.jpg" alt="Children">
+                <p>Children</p>
+            </div>
+        </div>
+        <button class="manage-profiles-btn">Manage Profiles</button>
+    </div>
+</body>
+</html>
+
